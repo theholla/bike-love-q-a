@@ -4,7 +4,7 @@ Date of current version: October 3, 2015
 
 # Message-board
 
-A mesage board.
+A stack overflow clone.
 
 ## Prerequisites
 
