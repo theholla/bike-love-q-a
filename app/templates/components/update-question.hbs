@@ -28,5 +28,5 @@
     <button class="btn btn-default" {{action 'deleteQuestion' model}}>delete</button>
   </div>
 {{else}}
-  <button class="btn btn-default" {{action 'updateQuestionForm'}}><span class="glyphicon glyphicon-wrench"></span></button>
+  <div class="right"><a {{action 'updateQuestionForm'}}>suggest an edit for this question</a></div>
 {{/if}}
