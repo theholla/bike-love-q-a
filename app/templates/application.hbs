@@ -1,19 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>stalk floweroh</title>
-</head>
-
 <body>
-  <nav>
-    <ul>
-      <li>{{#link-to 'index'}} stalk floweroh {{/link-to}}</li>
-      <li>{{#link-to 'question'}} stuff {{/link-to}}</li>
-      <li>{{#link-to 'question'}} stuff {{/link-to}}</li>
-    </ul>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Bike Love Q&A</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>{{#link-to 'index'}}?? <span class="sr-only">(current)</span>{{/link-to}}</li>
+          <li>{{#link-to 'index'}}??{{/link-to}}</li>
+          <li>{{#link-to 'index'}}??{{/link-to}}</li>
+          <li>{{#link-to 'ask-question'}}<div id="plus"><strong>+</strong></div>{{/link-to}}</li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-{{outlet}}
+  <div class="container">
+    {{outlet}}
+  </div>
 
 </body>
-</html>

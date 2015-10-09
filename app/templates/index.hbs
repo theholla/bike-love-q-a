@@ -1,1 +1,8 @@
-{{outlet}}
+Index page.
+Questions go here.
+
+<ul>
+  {{#each model as |question|}}
+  <li>{{question.summary}}<br>{{question.tags}}</li>
+  {{/each}}
+</ul>

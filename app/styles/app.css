@@ -1,10 +1,10 @@
 body {
   margin: 0;
+  margin-top: 60px;
   padding: 0;
   font-size: 16px;}
 
 nav {
-  background-color: #333;
   margin: 0;
   overflow: hidden;}
 
