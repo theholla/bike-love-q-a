@@ -1,1 +1,24 @@
-{{yield}}
+{{#if provideAnswer}}
+  <h1>My answer!</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          {{input value=name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          {{input value=email id="email"}}
+        </div>
+
+        <div class="form-group">
+          <label for="text">What's your answer?</label>
+          {{input value=text id="text"}}
+        </div>
+        <button {{action 'saveAnswer'}}>Go</button>
+      </form>
+    </div>
+{{else}}
+  <button class="btn btn-default" {{action 'provideAnswerForm'}}>Respond</button>
+{{/if}}
