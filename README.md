@@ -6,6 +6,12 @@ Date of current version: October 8, 2015
 
 This is a prototype of a site to easily communicate with volunteers at a local bike collective. Curious about starting a bike collective in your own town? Know a sweet DIY tip for removing a crank arm in a pinch? Post your question or answer here. Everyone is welcome to ask or answer.
 
+# User Interface
+
+It mimics [Bike Farm](http://www.bikefarm.org)'s color scheme.
+
+<img src="ui.png">
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
