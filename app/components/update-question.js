@@ -20,7 +20,7 @@ export default Ember.Component.extend({
 
     deleteQuestion(question) {
       if(confirm('Delete this for reals?')) {
-        this.sendAction('deleteQuestion', question, params);
+        this.sendAction('deleteQuestion', question);
       }
     }
   }
