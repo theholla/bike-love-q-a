@@ -1,4 +1,4 @@
-<div class="emphasis">Q: {{question.summary}}</div>
+<div class="row emphasis">Q: {{question.summary}}</div>
 
 <div class="row">
   <h5>asked by {{question.user}} - {{format-date question.date}}</h5>
@@ -17,9 +17,10 @@
 <div class="row">
   <ul>
     {{#each question.answers as |answer|}}
-      <div class="minoremphasis">A: by {{answer.name}} - email: {{answer.email}}</div>
-      <li class="answer">{{answer.text}}
-      <button {{action 'deleteAnswer' answer}}><span class="glyphicon glyphicon-trash"></span></button></li>
+      <span class="minoremphasis">A: by {{answer.name}} - email: {{answer.email}}</span>
+      <li class="answer">{{answer.text}}</li>
+      <div class="pointer right icon" {{action 'deleteAnswer' answer}}>
+        <span class="glyphicon glyphicon-trash"></span></div>
     {{/each}}
   </ul>
 </div>

@@ -4,22 +4,137 @@ body {
   padding: 0;
   font-size: 16px;}
 
-nav {
-  margin: 0;
-  overflow: hidden;}
+.top {
+  background-color: #9ACCCD;
+  font-size: 30px;
+  font-family: 'Homenaje',sans-serif;}
 
-nav ul {
-  margin: 0;
-  padding: 0;}
+#plus {
+  color: black;}
 
-nav ul li {
-  display: inline-block;
+  #plus:hover {
+    color: white;
+    background-color: #ABCC61;
+    border-radius: 20px;
+    text-decoration: none;}
+
+a {
+  font-size: 20px;}
+
+a:hover {
+  color: #ABCC17;
+  text-decoration: none;}
+
+ul {
   list-style-type: none;}
 
-nav > ul > li > a {
-  color: #aaa;
-  background-color: #FF0;
-  display: block;
-  line-height: 2em;
-  padding: 0.5em 0.5em;
-  text-decoration: none;}
+#questionlist {
+  margin-top: 10px;}
+
+li.question {
+  border-bottom: 1px dashed #D3D3D3;
+  list-style-type: decimal;}
+
+.pagetopbar {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Homenaje',sans-serif;
+  background-color: #ABCC61;
+  border-top: 2px dashed #563C17;
+  border-bottom: 2px solid #563C17;
+  border-radius: 8px;}
+
+.row {
+  margin-left: 5px;}
+
+.emphasis {
+  font-size: 40px;
+  font-family: 'Homenaje',sans-serif;
+  margin-bottom: 10px;}
+
+.minoremphasis {
+  font-size: 20px;
+  font-family: 'Homenaje',sans-serif;
+  border-bottom: 2px solid #563C17;
+  letter-spacing: 1px;
+  margin-top: 20px;}
+
+.right {
+  float: right;}
+
+li.answer {
+  background-color: #ABCC61;
+  padding: 5px;
+  margin-top: 5px;}
+
+.ask {
+  width: 20%;
+  float: right;
+  text-align: center;
+  font-family: 'Homenaje',sans-serif;
+  background-color: #ABCC61;
+  border-radius: 8px;}
+
+.ask > a {
+  color: black;
+  font-size: 30px;}
+
+  .ask:hover {
+    color: #ABCC61;
+    background-color: white;
+    text-decoration: none;}
+
+.pointer {
+  cursor: pointer;}
+
+.button {
+  width: 20%;
+  float: right;
+  margin-right: 1px;
+  text-align: center;
+  font-family: 'Homenaje',sans-serif;
+  background-color: #ABCC61;
+  border-radius: 8px;
+  color: black;
+  font-size: 30px;}
+
+  .button:hover {
+    color: #ABCC61;
+    background-color: white;
+    text-decoration: none;}
+
+.serious {
+  background-color: white;
+  color: red;
+}
+  .serious:hover {
+    color: white;
+    background-color: red;  }
+
+.form {
+  background-color: #9ACCCD;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  max-width: 540px;}
+
+.formCHANGE {
+  background-color: #EC5573;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  max-width: 540px;}
+
+.formemphasis {
+  font-size: 40px;
+  font-family: 'Homenaje',sans-serif;
+  margin-bottom: 10px;}
+
+.formq {
+  font-size: 30px;
+  font-family: 'Homenaje',sans-serif;
+  margin-bottom: 10px;}
+
+.icon {
+  margin-top: -22px;
+  margin-right: 5px;}
