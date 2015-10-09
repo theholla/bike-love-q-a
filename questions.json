@@ -1,12 +1,12 @@
 { "questions": [{
   "summary": "Why does .equals() result in an Assertion Error when comparing two objects?",
-  "question": "I'm working on unit testing for a project at code school and .equals() is giving me some trouble. In my project, .save() is saving into a sql database. This code passes the unit test: @Test public void save_assignsNameToObject() {Restaurant testRestaurant = new Restaurant('PokPok','503-444-4444'); testRestaurant.save();   Restaurant savedRestaurant = Restaurant.all.get(0); assertEquals(savedRestaurant.getName(), 'PokPok');} But if I change the final line to the following, it will result in an assertion error: assertTrue(savedRestaurant.equals(testRestaurant));",
+  "q": "I'm working on unit testing for a project at code school and .equals() is giving me some trouble. In my project, .save() is saving into a sql database. This code passes the unit test: @Test public void save_assignsNameToObject() {Restaurant testRestaurant = new Restaurant('PokPok','503-444-4444'); testRestaurant.save();   Restaurant savedRestaurant = Restaurant.all.get(0); assertEquals(savedRestaurant.getName(), 'PokPok');} But if I change the final line to the following, it will result in an assertion error: assertTrue(savedRestaurant.equals(testRestaurant));",
   "user": "theholla",
   "date": "09/03/2015",
   "tags": "java"},
   {
   "summary": "Should I bake banana bread for dinner again?",
-  "question": "I want to eat banana bread for dinner, but I've already eaten it five nights this week. The bread contains nuts and buckwheat flour, and is low in sugar... at least for a dessert bread. What do you think?",
+  "q": "I want to eat banana bread for dinner, but I've already eaten it five nights this week. The bread contains nuts and buckwheat flour, and is low in sugar... at least for a dessert bread. What do you think?",
   "user": "theholla",
   "date": "10/01/2015",
   "tags": "pastries, dinner"
