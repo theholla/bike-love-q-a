@@ -7,8 +7,8 @@ export default Ember.Component.extend({
         summary: this.get('summary') ? this.get('summary') : "",
         q: this.get('q') ? this.get('q') : "",
         user: this.get('user') ? this.get('user') : "",
-        date: this.get('date') ? this.get('date') : "",
         tags: this.get('tags') ? this.get('tags') : "",
+        date: Date.now(),
       };
       this.sendAction('save', params);
     }
