@@ -1,10 +1,10 @@
 #### Message board
 **By Diana Holland**
-Date of current version: October 3, 2015
+Date of current version: October 8, 2015
 
-# Message-board
+# Bike Love Q&A
 
-A stack overflow clone.
+This is a prototype of a site to easily communicate with volunteers at a local bike collective. Curious about starting a bike collective in your own town? Know a sweet DIY tip for removing a crank arm in a pinch? Post your question or answer here. Everyone is welcome to ask or answer.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/theholla/message-board.git` this repository
+* `git clone https://github.com/theholla/bike-love-q-a.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
