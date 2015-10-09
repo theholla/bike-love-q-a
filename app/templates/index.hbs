@@ -3,6 +3,6 @@ Questions go here.
 
 <ul>
   {{#each model as |question|}}
-  <li>{{question.summary}}<br>{{question.tags}}</li>
+  <li>{{#link-to 'question' question.id}}{{question.summary}}{{/link-to}}<br>{{question.tags}}</li>
   {{/each}}
 </ul>
