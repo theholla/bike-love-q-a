@@ -1,6 +1,7 @@
+<div class="row emphasis">Q: {{question.summary}}</div>
+
 <div class="row">
-  <h1>{{question.summary}}</h1>
-  <h5>{{question.user}} - {{format-date question.date}}</h5>
+  <h5>asked by {{question.user}} - {{format-date question.date}}</h5>
 </div>
 
 <div class="row">
@@ -11,11 +12,15 @@
   <h5>Tags: {{question.tags}}</h5>
 </div>
 
-<ul>
-  {{#each question.answers as |answer|}}
-    <li>Answer: {{answer.text}}<p>Name: {{answer.name}} - Email: {{answer.email}}</p>
-    <button {{action 'deleteAnswer' answer}}><span class="glyphicon glyphicon-trash"></span></button></li>
-  {{/each}}
-</ul>
+<div class="row">{{provide-answer saveAnswer="saveAnswer" question=question}}</div>
 
-{{provide-answer saveAnswer="saveAnswer" question=question}}
+<div class="row">
+  <ul>
+    {{#each question.answers as |answer|}}
+      <span class="minoremphasis">A: by {{answer.name}} - email: {{answer.email}}</span>
+      <li class="answer">{{answer.text}}</li>
+      <div class="pointer right icon" {{action 'deleteAnswer' answer}}>
+        <span class="glyphicon glyphicon-trash"></span></div>
+    {{/each}}
+  </ul>
+</div>

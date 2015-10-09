@@ -1,8 +1,10 @@
-Index page.
-Questions go here.
+<div class="pagetopbar"> trending questions </div>
+<div id="questionlist">
+  <ul>
+    {{#each model as |question|}}
+    <li class="question">{{#link-to 'question' question.id}}{{question.summary}}{{/link-to}} (asked by {{question.user}})</li>
+    {{/each}}
+  </ul>
+</div>
 
-<ul>
-  {{#each model as |question|}}
-  <li>{{#link-to 'question' question.id}}{{question.summary}}{{/link-to}}<br>{{question.tags}}</li>
-  {{/each}}
-</ul>
+<div class="ask">{{#link-to 'ask-question'}} ask {{/link-to}}</div>

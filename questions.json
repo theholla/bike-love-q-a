@@ -1,14 +1,31 @@
 { "questions": [{
-  "summary": "Why does .equals() result in an Assertion Error when comparing two objects?",
-  "q": "I'm working on unit testing for a project at code school and .equals() is giving me some trouble. In my project, .save() is saving into a sql database. This code passes the unit test: @Test public void save_assignsNameToObject() {Restaurant testRestaurant = new Restaurant('PokPok','503-444-4444'); testRestaurant.save();   Restaurant savedRestaurant = Restaurant.all.get(0); assertEquals(savedRestaurant.getName(), 'PokPok');} But if I change the final line to the following, it will result in an assertion error: assertTrue(savedRestaurant.equals(testRestaurant));",
-  "user": "theholla",
-  "date": "09/03/2015",
-  "tags": "java"},
+  "summary": "mission and goals",
+  "q": "What are some different mission statements that a bike co-op might have?",
+  "user": "bikeloveforever",
+  "date": "September 3, 2015",
+  "tags": "bikes, coops, nonprofits"},
   {
-  "summary": "Should I bake banana bread for dinner again?",
-  "q": "I want to eat banana bread for dinner, but I've already eaten it five nights this week. The bread contains nuts and buckwheat flour, and is low in sugar... at least for a dessert bread. What do you think?",
-  "user": "theholla",
-  "date": "10/01/2015",
-  "tags": "pastries, dinner"
-  }]
+  "summary": "expectations in the shop",
+  "q": "What happens when I enter a DIY bike collective? How is it different from a bike shop?",
+  "user": "Sally Starface",
+  "date": "October 1, 2015",
+  "tags": "bikes, coops, expectations"},
+  {
+  "summary": "Will you fix my bike?",
+  "q": "Do you fix bicycles? Like, if I'm in a real rush, can I pay a premium for you to fix my bike instead of me doing it myself?",
+  "user": "June Joon",
+  "date": "October 3, 2015",
+  "tags": "bikes, money"},
+  {
+  "summary": "When's the next Midnight Mystery Ride?",
+  "q": "I'm new to town, and I head that there's a MMR every month. Is it coming up? Who is leading it? Where does it meet and what happens?",
+  "user": "Ska Pants",
+  "date": "October 9, 2015",
+  "tags": "MMR, bikes"},
+  {
+  "summary": "Does your shop offer classes?",
+  "q": "I'd like to learn to true a wheel. When's the next class? How much does it cost?",
+  "user": "Jane Johnson",
+  "date": "October 2, 2015",
+  "tags": "bikes, wheels"}]
 }

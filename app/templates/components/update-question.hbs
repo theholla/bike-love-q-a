@@ -1,32 +1,32 @@
 {{#if updateQuestionForm}}
-  <h1>Update Question</h1>
-  <div>
+  <div class="formCHANGE">
     <form>
+      <div class="formemphasis">you are changing this question!!!</div>
       <div class="form-group">
-        <label for="summary">Quick summary</label>
-        {{input value=summary id="summary"}}
+        <label for="summary"><span class="formq">this Q, in a few words:</span></label><br>
+        {{textarea value=summary id="summary" cols="60" rows="1"}}
       </div>
 
       <div class="form-group">
-        <label for="q">Your question</label>
-        {{textarea value=q id="q" cols="60" rows="10"}}
+        <label for="q"><span class="formq">question:</span></label><br>
+        {{textarea value=q id="q" cols="60" rows="5"}}
       </div>
 
       <div class="form-group">
-        <label for="user">name</label>
+        <label for="user"><span class="formq">name: </span></label>
         {{input value=user id="user"}}
       </div>
 
       <div class="form-group">
-        <label for="tags">tags</label>
+        <label for="tags"><span class="formq">tags: </span></label>
         {{input value=tags id="tags"}}
       </div>
 
-      <button class="btn btn-default" {{action 'update' model}}>update</button>
+      <div class="button pointer serious" {{action 'update' model}}>update</div>
     </form>
 
-    <button class="btn btn-default" {{action 'deleteQuestion' model}}>delete</button>
+    <div class="button pointer serious" {{action 'deleteQuestion' model}}>delete</div>
   </div>
 {{else}}
-  <button class="btn btn-default" {{action 'updateQuestionForm'}}><span class="glyphicon glyphicon-wrench"></span></button>
+  <div class="right"><a {{action 'updateQuestionForm'}}>suggest an edit for this question</a></div>
 {{/if}}
